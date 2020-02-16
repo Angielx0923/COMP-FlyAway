@@ -1,0 +1,307 @@
+/* ------> GENERAL <------ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: #444;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3.1rem;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.website-title--red {
+    color: rgb(219, 42, 42);
+}
+
+.btn {
+    display: block;
+    border-radius: 3px;
+    background-color: rgb(219, 42, 42);
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    
+    transition: background-color 150ms ease;
+}
+
+.btn:hover {
+    background-color: rgb(241, 137, 0);
+}
+
+
+
+
+/* ------> HEADER <------ */
+
+.header {
+    height: 120px;
+}
+
+.header__title {
+    float: left;
+    margin-top: 32px;
+}
+
+.nav {
+    float: right;
+    margin-top: 50px;
+}
+
+.nav__item {
+    float: left;
+    display: block;
+}
+
+.nav__link {
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.nav__link:hover {
+    color: rgb(219, 42, 42);
+}
+
+
+
+/* ------> MAIN <------ */
+/* SECTION 1 - HOME IMAGE */
+
+.home-image {
+    height: 500px;
+    background: url(../assets/img/main-2.jpg) center;
+}
+
+.home-image__title {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 130px 0 40px 0;
+    margin-bottom: 13px;
+}
+
+.home-image__title--bold {
+    font-weight: bold;
+}
+
+.home-image__btn {
+    width: 120px;
+    height: 45px;
+    line-height: 45px; /* pour centre - dois être de la même taille que la height*/
+    font-size: 1.2rem;
+}
+
+
+
+
+/* SECTION 2 - STEPS */ 
+
+.steps__list {
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.steps__list-item {
+    margin-right: 1rem;
+}
+
+.steps__list-item:last-child {
+    margin-right: 0;
+}
+
+.steps__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.steps__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.steps__text {
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.4rem;
+    color: #777;
+}
+
+
+
+
+/* SECTION 3 - OPTIONS */
+
+.options {
+    background-color: #efefef;
+    padding: 2rem 0;
+}
+
+.options__wrapper {
+    display: flex;
+}
+
+.options-article {
+    height: 270px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.first-article {
+    background: url(../assets/img/article-2.jpg) no-repeat center;
+}
+
+.second-article {
+    background: url(../assets/img/article-1.jpg) no-repeat center;
+}
+
+.overlay {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.95);
+    height: 100%;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+    padding: 28px 20px 20px 20px;
+}
+
+.options-article__title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1.3rem;
+    border-bottom: solid 1px rgba(112, 112, 112, 0.15);
+}
+
+.options-article__text {
+    margin-top: 1.3rem;
+    line-height: 1.4rem;
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(68, 68, 68, 0.603);
+    text-align: center;
+}
+
+.options-article__btn {
+    margin-top: 1.5rem;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    font-size: .9rem;
+}
+
+
+
+
+/* SECTION 4 - CONTACT */
+
+.contact {
+    padding: 4rem 0;
+}
+
+.contact__wrapper {
+    text-align: center;
+}
+
+.contact__title {
+    display: inline-block;
+    width: 400px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 1.3rem;
+    border-bottom: solid 2px rgb(241, 137, 0);
+    color: #444;
+}
+
+.contact__text {
+    padding-top: 1.3rem;
+    line-height: 1.3rem;
+    color: #777;
+    font-size: .95rem;
+}
+
+
+
+
+/* FORM */
+
+.contact-form {
+    padding-top: 3rem;
+}
+
+.contact-form__label {
+    font-weight: bold;
+    margin-right: .2rem;
+    margin-left: 2rem;
+    color: #777;
+}
+
+.contact-form__input {
+    width: 300px;
+    border: solid 1px rgba(119, 119, 119, 0.281);
+    border-radius: 5px;
+    padding: .7rem;
+    font-style: italic;
+}
+
+.contact-form__label--message {
+    display: inline-block;
+}
+
+.contact-form__input::placeholder {
+    color: rgba(119, 119, 119, 0.404);
+}
+
+.contact-form__btn {
+    display: inline-block;
+    margin-left: .5rem;
+    text-decoration: none;
+    border: none;
+    height: 30px;
+    width: 40px;
+    font-size: .9rem;
+}
+
+
+
+
+/* ------> FOOTER <------*/
+
+.footer {
+    height: 260px;
+    background-color: #444;
+}
+
+.footer__title {
+    color: #fff;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+}

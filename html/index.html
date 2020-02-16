@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Bitter:400,700|PT+Sans+Narrow:400,700|Roboto+Condensed:400,700i&display=swap" rel="stylesheet">
+
+    <title>FlyAway</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <h1 class="header__title website-title">Fly<span class="header__title--red website-title--red">A</span>way<span class="header__title--red website-title--red">.</span></h1>
+            <nav class="nav header__nav">
+                <ul class="nav__list header__nav-list">
+                    <li class="nav__item nav__item--1 header__nav-list-item"><a class="nav__link nav__link--1 header__nav-link" href="#home-image">Accueil</a></li>
+                    <li class="nav__item nav__item--2 header__nav-list-item"><a class="nav__link nav__link--2 header__nav-link" href="#options">Destinations</a></li>
+                    <li class="nav__item nav__item--3 header__nav-list-item"><a class="nav__link nav__link--3 header__nav-link" href="#steps">Mon voyage</a></li>
+                    <li class="nav__item nav__item--4 header__nav-list-item"><a class="nav__link nav__link--4 header__nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="home-image" id="home-image">
+            <div class="home-image__wrapper wrapper">
+                <h2 class="home-image__title">Organisez le voyage<br><strong class="home-image__title--bold">de vos rêves</strong></h2>
+                <a class="btn home-image__btn" href="#">C'est parti !</a>
+            </div>
+        </section>
+        <section class="steps" id="steps">
+            <div class="steps__wrapper wrapper">
+                <ul class="steps__list">
+                    <li class="steps__list-item">
+                        <img class="steps__img" src="../assets/img/steps-icon-1.png" alt="logo planifier">
+                        <h4 class="steps__title">Je planifie</h4>
+                        <p class="steps__text">Je choisi mes dates. Notre équipe se chargera de vous orienter vers les dates les plus adéquates à votre voyage avec des prix toujours plus attractifs !</p>
+                    </li>
+                    <li class="steps__list-item">
+                        <img class="steps__img" src="../assets/img/steps-icon-2.png" alt="logo organiser">
+                        <h4 class="steps__title">J'organise</h4>
+                        <p class="steps__text">On y est presque ! Je choisi mon vol, mon hébergement et mon moyen de transport. Votre voyage clé en main, négocié pour vous.</p>
+                    </li>
+                    <li class="steps__list-item">
+                        <img class="steps__img" src="../assets/img/steps-icon-3.png" alt="logo voyager">
+                        <h4 class="steps__title">Je voyage</h4>
+                        <p class="steps__text">Votre êtes paré au décollage ! Nous vous donnons quelques derniers conseils et astuces sur le pouce et... attention au décollage !</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="options" id="options">
+            <div class="options__wrapper wrapper">
+                <article class="first-article options-article">
+                    <div class="first-article__overlay overlay">
+                        <h4 class="first-article__title options-article__title">L'Amérique en famille</h4>
+                        <p class="first-article__text options-article__text">Partir à la conquête de l'ouest en famille, c'est possible !</p>
+                        <a class="btn first-article__btn options-article__btn" href="#">+ d'infos</a>
+                    </div>
+                </article>
+                <article class="second-article options-article">
+                    <div class="second-article__overlay overlay">
+                        <h4 class="second-article__title options-article__title">Palmiers et coconuts</h4>
+                        <p class="second-article__text options-article__text">En couple ou entre amis, en route vers ce pays exotique !</p>
+                        <a class="btn second-article__btn options-article__btn" href="#">+ d'infos</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact__wrapper wrapper">
+                <h3 class="contact__title">Contactez-nous</h3>
+                <p class="contact__text">Des doutes, des questions ou simplement des mots d'amour ? Toutes les occasions sont bonnes pour nous contacter. Alors n'hésitez plus ! Notre équipe à taille humaine se fera une joie de vous répondre et de vous aider à organiser le voyage de vos rêves.<br>Demain commence aujourd'hui, alors pourquoi attendre ?</p>
+
+                <form class="contact-form" action="#">
+                    <label class="contact-form__label" for="name">Nom</label>
+                    <input class="contact-form__input" type="text" placeholder="Votre nom" id="name">
+                    <label class="contact-form__label" for="email">Email</label>
+                    <input class="contact-form__input" type="email" placeholder="Votre email" id="email">
+                    <label class="contact-form__label contact-form__label--message" for="text">Message</label>
+                    <input class="contact-form__input" type="text" placeholder="Votre message..." id="text">
+                    <button type="submit" class="btn contact-form__btn">OK</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1 class="footer__title website-title">Fly<span class="footer__title--red website-title--red">A</span>way<span class="footer__title--red website-title--red">.</span></h1>
+        <p class="footer__copyright">Copyright © Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>
